@@ -1,10 +1,10 @@
 'use strict';
-var crypto = require('crypto');
+const crypto = require('crypto');
 
-module.exports = function (buf) {
-	if (typeof buf !== 'string' && !Buffer.isBuffer(buf)) {
-		throw new TypeError('Expected a buffer or string');
+module.exports = input => {
+	if (typeof input !== 'string' && !Buffer.isBuffer(input)) {
+		throw new TypeError('Expected a Buffer or string');
 	}
 
-	return crypto.createHash('md5').update(buf).digest('hex').slice(0, 10);
+	return crypto.createHash('md5').update(input).digest('hex').slice(0, 10);
 };

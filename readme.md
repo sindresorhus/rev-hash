@@ -10,25 +10,35 @@ If you think you need a different hash algorithm or a longer hash, [you're wrong
 ## Install
 
 ```
-$ npm install --save rev-hash
+$ npm install rev-hash
 ```
 
 
 ## Usage
 
 ```js
-var fs = require('fs');
-var revHash = require('rev-hash');
-var buffer = fs.readFileSync('unicorn.png');
+const fs = require('fs');
+const revHash = require('rev-hash');
 
-revHash(buffer);
+revHash(fs.readFileSync('unicorn.png'));
 //=> 'bb9d8fe615'
 
-revHash(revableContentString);
-//=> '9e107d9d37'
+revHash('Lorem ipsum dolor sit amet');
+//=> 'fea80f2db0'
 ```
+
+
+## API
+
+### revHash(input)
+
+#### input
+
+Type: `Buffer` `string`
+
+Data to create a hash from.
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

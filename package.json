@@ -1,36 +1,38 @@
 {
-  "name": "rev-hash",
-  "version": "1.0.0",
-  "description": "Create a hash for file revving",
-  "license": "MIT",
-  "repository": "sindresorhus/rev-hash",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "hash",
-    "crypto",
-    "md5",
-    "rev",
-    "revving",
-    "web",
-    "buffer",
-    "file",
-    "cache",
-    "caching"
-  ],
-  "devDependencies": {
-    "ava": "*"
-  }
+	"name": "rev-hash",
+	"version": "1.0.0",
+	"description": "Create a hash for file revving",
+	"license": "MIT",
+	"repository": "sindresorhus/rev-hash",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"hash",
+		"crypto",
+		"md5",
+		"rev",
+		"revving",
+		"web",
+		"buffer",
+		"string",
+		"file",
+		"cache",
+		"caching"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }
