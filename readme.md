@@ -18,23 +18,23 @@ $ npm install rev-hash
 
 ```js
 const fs = require('fs');
-const revHash = require('rev-hash');
+const revisionHash = require('rev-hash');
 
-revHash(fs.readFileSync('unicorn.png'));
+revisionHash(fs.readFileSync('unicorn.png'));
 //=> 'bb9d8fe615'
 
-revHash('Lorem ipsum dolor sit amet');
+revisionHash('Lorem ipsum dolor sit amet');
 //=> 'fea80f2db0'
 ```
 
 
 ## API
 
-### revHash(input)
+### revisionHash(input)
 
 #### input
 
-Type: `Buffer` `string`
+Type: `Buffer | string`
 
 Data to create a hash from.
 
