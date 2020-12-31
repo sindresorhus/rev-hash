@@ -1,4 +1,4 @@
-# rev-hash [![Build Status](https://travis-ci.com/sindresorhus/rev-hash.svg?branch=master)](https://travis-ci.com/sindresorhus/rev-hash)
+# rev-hash
 
 > Create a hash for file revving
 
