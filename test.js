@@ -1,5 +1,6 @@
+import {Buffer} from 'node:buffer';
 import test from 'ava';
-import revisionHash from '.';
+import revisionHash from './index.js';
 
 console.log(revisionHash('Lorem ipsum dolor sit amet'));
 

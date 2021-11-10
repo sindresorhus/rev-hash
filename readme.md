@@ -8,15 +8,15 @@ If you think you need a different hash algorithm or a longer hash, [you're wrong
 
 ## Install
 
-```
-$ npm install rev-hash
+```sh
+npm install rev-hash
 ```
 
 ## Usage
 
 ```js
-const fs = require('fs');
-const revisionHash = require('rev-hash');
+import fs from 'node:fs';
+import revisionHash from 'rev-hash';
 
 revisionHash(fs.readFileSync('unicorn.png'));
 //=> 'bb9d8fe615'
@@ -33,4 +33,4 @@ revisionHash('Lorem ipsum dolor sit amet');
 
 Type: `Buffer | string`
 
-Data to create a hash from.
+The data to create a hash from.
