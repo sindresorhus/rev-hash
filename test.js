@@ -10,4 +10,6 @@ const fixtureBuffer = Buffer.from(fixture);
 test('main', t => {
 	t.is(revisionHash(fixture), 'bb9d8fe615');
 	t.is(revisionHash(fixtureBuffer), 'bb9d8fe615');
+	t.is(revisionHash(fixtureBuffer, 16), 'bb9d8fe6159187b9');
+	t.is(revisionHash(fixtureBuffer, 100), 'bb9d8fe6159187b9ea494c1b313d23d4');
 });
