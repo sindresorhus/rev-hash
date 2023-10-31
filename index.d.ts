@@ -1,5 +1,3 @@
-import {Buffer} from 'node:buffer';
-
 /**
 Create a hash for file revving.
 
@@ -17,4 +15,4 @@ revisionHash('Lorem ipsum dolor sit amet');
 //=> 'fea80f2db0'
 ```
 */
-export default function revisionHash(data: Buffer | string): string;
+export default function revisionHash(data: Uint8Array | string): string;
