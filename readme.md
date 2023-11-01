@@ -31,6 +31,6 @@ revisionHash('Lorem ipsum dolor sit amet');
 
 #### input
 
-Type: `Buffer | string`
+Type: `Uint8Array | string`
 
 The data to create a hash from.
